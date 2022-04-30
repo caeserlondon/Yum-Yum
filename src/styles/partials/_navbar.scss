@@ -7,6 +7,10 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 888;
+	position: fixed;
+	width: 100%;
+	top: 0;
 	.logo {
 		font-size: 1.5em;
 		font-weight: bolder;
@@ -104,6 +108,7 @@
 	background-color: var(--background-color);
 	box-shadow: 0 0 0 1000px var(--shadow-color), 3px 0 5px var(--shadow-color);
 	animation: getAnimationDuration(0.3s) slidInLeft;
+	z-index: 999;
 	.sidebar-link {
 		display: block;
 		padding: 0.5em 1em;

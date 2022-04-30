@@ -17,8 +17,9 @@
 @import "partials/hero-section.scss";
 @import "partials/animations.scss";
 @import "partials/improve-skills.scss";
-@import "partials/quete-section";
-@import "partials/topChief-section";
+@import "partials/quete-section.scss";
+@import "partials/topChief-section.scss";
+@import "partials/footer.scss";
 
 * {
 	margin: 0;
@@ -29,6 +30,7 @@
 body {
 	font-size: var(--font-size);
 	font-family: "Roboto", sans-serif;
+	padding-top: 55px;
 }
 
 a {
@@ -39,7 +41,7 @@ img {
 	object-fit: cover;
 }
 .container {
-	padding-inline: 12vw;
+	padding-inline: 25vw;
 }
 
 .main {
@@ -78,26 +80,6 @@ img {
 	}
 }
 
-.footer {
-	background-color: black;
-	color: white;
-	padding-block: 2.5em;
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
-	grid-gap: 1em;
-	.footer-section {
-		p {
-			opacity: 0.7;
-			margin-bottom: 0.5em;
-		}
-		p.title {
-			opacity: 1;
-			margin-bottom: 1.1em;
-			font-weight: bold;
-		}
-	}
-}
-
 // ............. Media Query .............. //
 // best media query breakpoints in 2022:-
 // 320px — 480px: Mobile devices
@@ -105,6 +87,17 @@ img {
 // 769px — 1024px: Small screens, laptops
 // 1025px — 1200px: Desktops, large screens
 // 1201px and more —  Extra large screens, TV
+
+@media screen and (max-width: 1280px) {
+	.container {
+		padding-inline: 18vw;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.container {
+		padding-inline: 12vw;
+	}
+}
 
 @media screen and (max-width: 768px) {
 	.navbar {
@@ -115,11 +108,50 @@ img {
 			display: block;
 		}
 	}
+	.container {
+		padding-inline: 6vw;
+	}
 	.btn {
 		padding: 0.7em 0.9em;
 		font-size: 0.85em;
 	}
+	.section {
+		.col {
+			width: 100%;
+			padding: 0 !important;
+			text-align: center;
+			margin-bottom: 2em;
+		}
+	}
+	.skill-item {
+		display: inline-block;
+		margin: 0.75em;
+	}
+	.section.improve-skills {
+		.btn {
+			display: block;
+			margin-left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
 	.chief-card {
 		box-shadow: 3px 5px 10px var(--shadow-color);
+	}
+	.footer {
+		grid-template-columns: repeat(4, 1fr);
+		.footer-section:nth-child(1) {
+			grid-column: span 4;
+		}
+		.footer-section:nth-child(2),
+		.footer-section:nth-child(3) {
+			grid-column: span 2;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.container {
+		padding-inline: 3vw;
 	}
 }
