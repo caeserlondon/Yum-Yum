@@ -78,7 +78,28 @@ img {
 	}
 }
 
-// best media query breakpoints 2022:-
+.footer {
+	background-color: black;
+	color: white;
+	padding-block: 2.5em;
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	grid-gap: 1em;
+	.footer-section {
+		p {
+			opacity: 0.7;
+			margin-bottom: 0.5em;
+		}
+		p.title {
+			opacity: 1;
+			margin-bottom: 1.1em;
+			font-weight: bold;
+		}
+	}
+}
+
+// ............. Media Query .............. //
+// best media query breakpoints in 2022:-
 // 320px — 480px: Mobile devices
 // 481px — 768px: iPads, Tablets
 // 769px — 1024px: Small screens, laptops
