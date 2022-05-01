@@ -32,8 +32,9 @@
 		.custom-image {
 			transform: scale(0);
 			opacity: 0;
-			border-radius: 5px;
+			border-radius: 10px;
 			overflow: hidden;
+			box-shadow: 3px 3px 5px var(--shadow-color);
 			animation: getAnimationDuration(0.4s) popOut forwards;
 			&:nth-child(2) {
 				animation-delay: 0.1s;
