@@ -2,8 +2,11 @@
 	.col.img {
 		img {
 			width: 100%;
+			box-shadow: 0 3px 5px var(--shadow-color);
+			border-radius: 15px;
 		}
 	}
+
 	.col.typography {
 		padding-left: 1em;
 		.skill-item {
@@ -22,6 +25,7 @@
 				}
 			}
 		}
+
 		.btn {
 			margin-top: 0.75em;
 		}
