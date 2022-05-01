@@ -21,6 +21,7 @@
 @import "partials/quete-section.scss";
 @import "partials/topChief-section.scss";
 @import "partials/previous-searches.scss";
+@import "partials/recipe-card.scss";
 @import "partials/footer.scss";
 
 * {
@@ -43,7 +44,7 @@ img {
 	object-fit: cover;
 }
 .container {
-	padding-inline: 25vw;
+	padding-inline: 20vw;
 }
 
 .main {
@@ -98,6 +99,12 @@ img {
 @media screen and (max-width: 1024px) {
 	.container {
 		padding-inline: 12vw;
+	}
+}
+
+@media screen and(min-width: 769px) {
+	.sidebar {
+		display: none;
 	}
 }
 
