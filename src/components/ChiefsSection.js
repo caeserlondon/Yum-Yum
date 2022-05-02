@@ -6,19 +6,20 @@ export default function ChiefsSection() {
 			name: "John Doe",
 			img: "/img/top-chiefs/img_1.jpeg",
 			recipesCount: "10",
-			cuisine: "Mexican",
+			cuisine: "Italian",
 		},
 		{
 			name: "Juan Carlos",
 			img: "/img/top-chiefs/img_2.jpeg",
-			recipesCount: "05",
+			recipesCount: "09",
 			cuisine: "Japanese",
 		},
+
 		{
 			name: "tom adams",
 			img: "/img/top-chiefs/img_3.jpeg",
 			recipesCount: "13",
-			cuisine: "Italian",
+			cuisine: "Indian",
 		},
 		{
 			name: "Jonny Smith",
@@ -35,8 +36,8 @@ export default function ChiefsSection() {
 		{
 			name: "Ben Affleck",
 			img: "/img/top-chiefs/img_6.jpeg",
-			recipesCount: "04",
-			cuisine: "Indian",
+			recipesCount: "09",
+			cuisine: "Mexican",
 		},
 	];
 	return (
