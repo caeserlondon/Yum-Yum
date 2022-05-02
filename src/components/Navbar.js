@@ -42,7 +42,7 @@ export default function Navbar() {
 						<Link
 							to={link.path}
 							key={link.name}
-							className={location.pathname === link.path && "active "}
+							className={location.pathname === link.path ? "active" : ""}
 						>
 							{link.name}
 						</Link>
