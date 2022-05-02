@@ -21,7 +21,11 @@ export default function HeroSection() {
 					delicious food recepies of all cuisine. And our service is absolutely
 					free. So start exploring now.
 				</p>
-				<button className="btn">explore now</button>
+				<div className="link-button">
+					<a href="/recipes" className="btn">
+						explore now
+					</a>
+				</div>
 			</div>
 			<div className="col gallery">
 				{images.map((src, index) => (
