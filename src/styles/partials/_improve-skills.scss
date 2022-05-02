@@ -6,7 +6,6 @@
 			border-radius: 15px;
 		}
 	}
-
 	.col.typography {
 		padding-left: 1em;
 		.skill-item {
@@ -24,10 +23,6 @@
 					animation-delay: #{$i * 0.1s};
 				}
 			}
-		}
-
-		.btn {
-			margin-top: 0.75em;
 		}
 	}
 }
