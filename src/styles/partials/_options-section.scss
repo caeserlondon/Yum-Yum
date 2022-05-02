@@ -1,0 +1,47 @@
+.options-container {
+	box-shadow: 5px 5px 10px var(--shadow-color);
+	border-radius: 10px;
+	padding: 1em;
+	border-left: 0.5em solid var(--primary-color);
+	background-color: var(--background-light);
+	margin-top: 1em;
+	display: flex;
+	gap: 1em;
+	.option {
+		height: 3.5em;
+		width: 3.5em;
+		box-shadow: 3px 3px 6px var(--shadow-color);
+		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&.light {
+			background-color: whitesmoke;
+		}
+		&.dark {
+			background-color: rgb(77, 77, 77);
+		}
+		.check {
+			height: 2.5em;
+			width: 2.5em;
+			background-color: var(--primary-color);
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 2px 2px 5px var(--shadow-color);
+			svg {
+				height: 1.5em;
+				width: 1.5em;
+			}
+		}
+	}
+	.btn span {
+		display: inline-block;
+		margin-left: 0.5em;
+	}
+}
+.d-block h2 {
+	font-size: 1.75em;
+	color: var(--text-color);
+}
