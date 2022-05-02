@@ -20,7 +20,11 @@ export default function ImproveSkills() {
 						{item}
 					</p>
 				))}
-				<button className="btn">Let's Cook</button>
+				<div className="link-button">
+					<a href="/recipes" className="btn">
+						Let's Cook
+					</a>
+				</div>
 			</div>
 		</div>
 	);
