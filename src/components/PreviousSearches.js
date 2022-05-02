@@ -3,15 +3,18 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const searches = [
 	"pizza",
-	"burger",
+	"ramen",
 	"cookies",
-	"juice",
+	"Taco",
 	"biriyani",
 	"salad",
-	"ice cream",
-	"lasagna",
+	"Burger",
+	"steak",
 	"pudding",
 	"soup",
+	"sushi",
+	"barbecue",
+	"pasta",
 ];
 
 export default function PreviousSearches() {
