@@ -1,16 +1,3 @@
-# Fully Responsive Recipe Website With Multiple Themes, Made using React, Reacts Hooks, Font-Awesome and SASS.
-
-**been deployed to**
-
-https://foodhub-caeser.netlify.app/
-
-![screeshot 1](./public/img/screenshots/hero.png)
-![screeshot 2](./public/img/screenshots/recipes.png)
-
-## Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
