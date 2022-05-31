@@ -6,6 +6,7 @@
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 1.75vw;
+		padding-right: 1em;
 		.custom-image {
 			transform: scale(0);
 			opacity: 0;
