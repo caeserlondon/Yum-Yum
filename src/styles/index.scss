@@ -13,17 +13,17 @@
 	@return calc($duration * var(--animation-speed));
 }
 
-@import "partials/navbar.scss";
-@import "partials/sidebar.scss";
-@import "partials/hero-section.scss";
-@import "partials/animations.scss";
-@import "partials/improve-skills.scss";
-@import "partials/quete-section.scss";
-@import "partials/topChief-section.scss";
-@import "partials/previous-searches.scss";
-@import "partials/recipes-section.scss";
-@import "partials/options-section.scss";
-@import "partials/footer.scss";
+@import 'partials/navbar.scss';
+@import 'partials/sidebar.scss';
+@import 'partials/hero-section.scss';
+@import 'partials/animations.scss';
+@import 'partials/improve-skills.scss';
+@import 'partials/quete-section.scss';
+@import 'partials/topChief-section.scss';
+@import 'partials/previous-searches.scss';
+@import 'partials/recipes-section.scss';
+@import 'partials/options-section.scss';
+@import 'partials/footer.scss';
 
 * {
 	margin: 0;
@@ -33,7 +33,7 @@
 
 body {
 	font-size: var(--font-size);
-	font-family: "Roboto", sans-serif;
+	font-family: 'Roboto', sans-serif;
 	padding-top: 55px;
 	background-color: var(--background-light);
 }
@@ -92,7 +92,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	margin-bottom: 3vw;
+	margin-bottom: 1.5vw;
 	&.d-block {
 		display: block;
 	}
