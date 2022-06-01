@@ -1,9 +1,9 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from 'react-router-dom';
 
-import { useState } from "react";
-import Sidebar from "./Sidebar";
+import { useState } from 'react';
+import Sidebar from './Sidebar';
 
-import { faHome, faList, faCog } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faList, faCog } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
 	const [showSidebar, setShowSidebar] = useState(false);
@@ -15,18 +15,18 @@ export default function Navbar() {
 
 	const links = [
 		{
-			name: "home",
-			path: "/",
+			name: 'home',
+			path: '/',
 			icon: faHome,
 		},
 		{
-			name: "recipes",
-			path: "/recipes",
+			name: 'recipes',
+			path: '/recipes',
 			icon: faList,
 		},
 		{
-			name: "settings",
-			path: "/settings",
+			name: 'settings',
+			path: '/settings',
 			icon: faCog,
 		},
 	];
@@ -35,14 +35,14 @@ export default function Navbar() {
 		<>
 			<div className="navbar container">
 				<Link to="/" className="logo">
-					F<span>oo</span>d Hub
+					Y<span>u</span>m <span> </span>Y<span>u</span>m
 				</Link>
 				<div className="nav-links">
 					{links.map((link) => (
 						<Link
 							to={link.path}
 							key={link.name}
-							className={location.pathname === link.path ? "active" : ""}
+							className={location.pathname === link.path ? 'active' : ''}
 						>
 							{link.name}
 						</Link>
@@ -50,7 +50,7 @@ export default function Navbar() {
 				</div>
 				<div
 					onClick={() => setShowSidebar(!showSidebar)}
-					className={showSidebar ? "sidebar-btn active" : "sidebar-btn"}
+					className={showSidebar ? 'sidebar-btn active' : 'sidebar-btn'}
 				>
 					<div className="bar"></div>
 					<div className="bar"></div>
