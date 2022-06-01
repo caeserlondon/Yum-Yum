@@ -23,9 +23,6 @@ export default function ImproveSkills() {
 
 	return (
 		<div className="section improve-skills">
-			{/* <div className="col img">
-				<img src="/img/gallery/img_10.jpeg" alt="sushi" />
-			</div> */}
 			<div className="col gallery">
 				{images.map((src, index) => (
 					<CustomImage key={index} imgSrc={src} pt={'90%'} />
