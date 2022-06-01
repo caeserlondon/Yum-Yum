@@ -18,7 +18,7 @@
 			border-radius: 10px;
 			overflow: hidden;
 			box-shadow: 3px 3px 5px var(--shadow-color);
-			animation: getAnimationDuration(0.4s) popOut forwards;
+			animation: getAnimationDuration(1s) popOut forwards;
 			&:nth-child(2) {
 				animation-delay: 0.2s;
 			}
