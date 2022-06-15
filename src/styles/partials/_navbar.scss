@@ -14,6 +14,7 @@
 	.logo {
 		font-size: 1.5em;
 		font-weight: bolder;
+		font-family: 'Water Brush', cursive;
 		color: var(--primary-color);
 		// text-shadow: X-offset  Y-offset blur color;
 		text-shadow: 2px 2px 2px var(--shadow-color);
@@ -30,8 +31,9 @@
 			text-transform: uppercase;
 			position: relative;
 			font-size: 0.9em;
+
 			&::before {
-				content: "";
+				content: '';
 				display: inline-block;
 				height: 3px;
 				width: 100%;
