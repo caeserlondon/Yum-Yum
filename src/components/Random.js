@@ -1,32 +1,37 @@
 import React, { useEffect, useState } from 'react'
-// import styled from 'styled-components'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Random = () => {
 	const [random, setRandom] = useState([])
+	const navigate = useNavigate()
 
 	useEffect(() => {
 		getRandom()
 	}, [])
 
 	const getRandom = async () => {
-		// const check = localStorage.getItem('random')
+		const check = localStorage.getItem('random')
 
-		// if (check) {
-		// 	setRandom(JSON.parse(check))
-		// } else {
-		const api = await fetch(
-			`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=12`
-		)
-		const data = await api.json()
-		// console.log(data);
+		if (check) {
+			setRandom(JSON.parse(check))
+		} else {
+			const api = await fetch(
+				`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9`
+			)
 
-		// localStorage.setItem('popular', JSON.stringify(data.recipes))
+			if (api.status === 402) {
+				navigate('/error')
+			} else {
+				const data = await api.json()
+				// console.log(data);
 
-		setRandom(data.recipes)
-		// }
+				localStorage.setItem('popular', JSON.stringify(data.recipes))
+
+				setRandom(data.recipes)
+			}
+		}
 	}
 
 	return (
@@ -52,7 +57,6 @@ const Random = () => {
 									<Link to={'/recipe/' + recipe.id}>
 										<p>{recipe.title}</p>
 										<img src={recipe.image} alt={recipe.title} />
-										{/* <Gradient /> */}
 									</Link>
 								</div>
 							</SplideSlide>
