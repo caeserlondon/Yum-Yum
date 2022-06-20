@@ -1,32 +1,39 @@
 import React, { useEffect, useState } from 'react'
-// import styled from 'styled-components'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Vegetarian = () => {
+	const [vegetarian, setVegetarian] = useState([])
+
+	const navigate = useNavigate()
+
 	useEffect(() => {
 		getVegetarian()
 	}, [])
 
-	const [vegetarian, setVegetarian] = useState([])
-
 	const getVegetarian = async () => {
-		// const check = localStorage.getItem('vegetarian')
+		const check = localStorage.getItem('vegetarian')
 
-		// if (check) {
-		// 	setVegetarian(JSON.parse(check))
-		// } else {
-		const api = await fetch(
-			`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=12&tags=vegetarian`
-		)
-		const data = await api.json()
-		// console.log(data)
+		if (check) {
+			setVegetarian(JSON.parse(check))
+		} else {
+			const api = await fetch(
+				`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9&tags=vegetarian`
+			)
 
-		// localStorage.setItem('vegetarian', JSON.stringify(data.recipes))
+			if (api.status === 402) {
+				// window.location = '/error'
+				navigate('/error')
+			} else {
+				const data = await api.json()
+				// console.log(data)
 
-		setVegetarian(data.recipes)
-		// }
+				localStorage.setItem('vegetarian', JSON.stringify(data.recipes))
+
+				setVegetarian(data.recipes)
+			}
+		}
 	}
 
 	return (
@@ -51,7 +58,6 @@ const Vegetarian = () => {
 									<Link to={'/recipe/' + recipe.id}>
 										<p>{recipe.title}</p>
 										<img src={recipe.image} alt={recipe.title} />
-										{/* <Gradient /> */}
 										<div className='gradient'></div>
 									</Link>
 								</div>
@@ -62,19 +68,6 @@ const Vegetarian = () => {
 			</div>
 		</div>
 	)
-
-	// return (
-	// 	// <div>
-	// 	// 	{vegetarian.map((recipe) => {
-	// 	// 		return (
-	// 	// 			<div key={recipe.id}>
-	// 	// 				<p>{recipe.title}</p>
-	// 	// 			</div>
-	// 	// 		)
-	// 	// 	})}
-	// 	// </div>
-	// 	console.log(process.env.REACT_APP_API_KEY)
-	// )
 }
 
 export default Vegetarian
