@@ -1,3 +1,7 @@
+# Yum Yum
+
+### a Food recipies website using API from https://spoonacular.com/
+
 ## Available Scripts
 
 In the project directory, you can run:
