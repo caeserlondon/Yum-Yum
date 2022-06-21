@@ -117,15 +117,15 @@ export default function Settings() {
 	const animationSpeeds = [
 		{
 			title: 'Slow',
-			value: 2,
+			value: 5,
 		},
 		{
 			title: 'Medium',
-			value: 1,
+			value: 3,
 		},
 		{
 			title: 'Fast',
-			value: 0.5,
+			value: 1,
 		},
 	]
 
