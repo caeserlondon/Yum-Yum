@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Recipes from './pages/Recipes'
 import Settings from './pages/Settings'
 import Error from './pages/Error'
+import LimitReached from './pages/LimitReached'
 
 function App() {
 	return (
@@ -16,7 +17,8 @@ function App() {
 					<Route path='/' element={<Home />} />
 					<Route path='/recipes' element={<Recipes />} />
 					<Route path='/settings' element={<Settings />} />
-					<Route path='/error' element={<Error />} />
+					<Route path='/*' element={<Error />} />
+					<Route path='/limit-reached' element={<LimitReached />} />
 				</Routes>
 			</div>
 			<Footer />
