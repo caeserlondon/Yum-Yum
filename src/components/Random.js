@@ -5,10 +5,12 @@ import { Link, useNavigate } from 'react-router-dom'
 
 const Random = () => {
 	const [random, setRandom] = useState([])
+
 	const navigate = useNavigate()
 
 	useEffect(() => {
 		getRandom()
+		// eslint-disable-next-line
 	}, [])
 
 	const getRandom = async () => {
@@ -22,12 +24,12 @@ const Random = () => {
 			)
 
 			if (api.status === 402) {
-				navigate('/error')
+				navigate('/limit-reached')
 			} else {
 				const data = await api.json()
 				// console.log(data);
 
-				localStorage.setItem('popular', JSON.stringify(data.recipes))
+				localStorage.setItem('random', JSON.stringify(data.recipes))
 
 				setRandom(data.recipes)
 			}
