@@ -10,6 +10,7 @@ const Vegetarian = () => {
 
 	useEffect(() => {
 		getVegetarian()
+		// eslint-disable-next-line
 	}, [])
 
 	const getVegetarian = async () => {
@@ -23,8 +24,7 @@ const Vegetarian = () => {
 			)
 
 			if (api.status === 402) {
-				// window.location = '/error'
-				navigate('/error')
+				navigate('/limit-reached')
 			} else {
 				const data = await api.json()
 				// console.log(data)
@@ -49,6 +49,7 @@ const Vegetarian = () => {
 						gap: '1rem',
 						rewind: true,
 						rewindSpeed: 1000,
+						autoplay: true,
 					}}
 				>
 					{vegetarian.map((recipe) => {
@@ -58,7 +59,6 @@ const Vegetarian = () => {
 									<Link to={'/recipe/' + recipe.id}>
 										<p>{recipe.title}</p>
 										<img src={recipe.image} alt={recipe.title} />
-										<div className='gradient'></div>
 									</Link>
 								</div>
 							</SplideSlide>
