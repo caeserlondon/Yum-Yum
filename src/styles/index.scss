@@ -1,13 +1,13 @@
 :root {
-	--background-color: #fff;
-	--background-light: #fff;
+	--background-color: rgb(231, 192, 192);
+	--background-light: rgb(237, 217, 217);
 	--shadow-color: rgba(0, 0, 0, 0.2);
 	--shadow-dark: rgba(0, 0, 0, 0.5);
-	--primary-color: rgb(255, 0, 86);
-	--text-color: #0a0a0a;
-	--text-light: #575757;
+	--primary-color: rgb(232, 25, 24);
+	--text-color: rgb(10, 10, 10);
+	--text-light: rgb(87, 87, 87);
 	--font-size: 16px;
-	--animation-speed: 1;
+	--animation-speed: 3;
 }
 @function getAnimationDuration($duration: number) {
 	@return calc($duration * var(--animation-speed));
@@ -19,11 +19,14 @@
 @import 'partials/animations.scss';
 @import 'partials/improve-skills.scss';
 @import 'partials/quete-section.scss';
-@import 'partials/topChief-section.scss';
+@import 'partials/vegetarian.scss';
+@import 'partials/random.scss';
 @import 'partials/previous-searches.scss';
 @import 'partials/recipes-section.scss';
 @import 'partials/options-section.scss';
 @import 'partials/footer.scss';
+@import 'partials/limit-reached.scss';
+@import 'partials/error.scss';
 
 * {
 	margin: 0;
@@ -175,9 +178,6 @@ img {
 		}
 	}
 
-	.chief-card {
-		box-shadow: 3px 5px 10px var(--shadow-color);
-	}
 	.footer {
 		grid-template-columns: repeat(4, 1fr);
 		.footer-section:nth-child(1) {
