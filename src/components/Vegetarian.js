@@ -25,6 +25,8 @@ const Vegetarian = () => {
 
 			if (api.status === 402) {
 				navigate('/limit-reached')
+			} else if (api.status === 404) {
+				navigate('/error')
 			} else {
 				const data = await api.json()
 				// console.log(data)
