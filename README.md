@@ -1,6 +1,6 @@
 # Yum Yum
 
-### a Food recipies website using API from https://spoonacular.com/
+### a Food recipies website build with React using API from https://spoonacular.com/
 
 ## Available Scripts
 
