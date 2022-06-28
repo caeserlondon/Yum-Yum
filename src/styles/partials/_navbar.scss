@@ -1,5 +1,5 @@
 .navbar {
-	height: 70px;
+	height: 80px;
 	// box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
 	box-shadow: 0 3px 6px var(--shadow-color);
 	background-color: var(--background-color);
@@ -12,7 +12,7 @@
 	width: 100%;
 	top: 0;
 	.logo {
-		font-size: 1.5em;
+		font-size: 2em;
 		font-weight: bolder;
 		font-family: 'Water Brush', cursive;
 		color: var(--primary-color);
@@ -30,7 +30,7 @@
 			letter-spacing: 2px;
 			text-transform: uppercase;
 			position: relative;
-			font-size: 0.9em;
+			font-size: 1.2em;
 
 			&::before {
 				content: '';
