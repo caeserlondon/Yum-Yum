@@ -14,7 +14,7 @@
 		border-left: 0.4em solid transparent;
 		margin-bottom: 1em;
 		color: var(--text-color);
-		font-size: 1.1em;
+		font-size: 1.5em;
 		transform: translateX(-100%);
 		animation: getAnimationDuration(0.3s) slidInLeft forwards;
 		@for $i from 1 through 3 {
