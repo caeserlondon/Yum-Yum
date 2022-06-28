@@ -39,6 +39,15 @@ body {
 	font-family: 'Roboto', sans-serif;
 	padding-top: 55px;
 	background-color: var(--background-light);
+	scrollbar-color: var(--primary-color) var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--primary-color);
+	border-radius: 5px;
+}
+::-webkit-scrollbar {
+	background-color: var(--background-color);
+	width: 10px;
 }
 
 a {
