@@ -12,7 +12,8 @@
 	width: 100%;
 	top: 0;
 	.logo {
-		font-size: 2em;
+		display: flex;
+		font-size: 2.4em;
 		font-weight: bolder;
 		font-family: 'Water Brush', cursive;
 		color: var(--primary-color);
@@ -20,6 +21,10 @@
 		text-shadow: 2px 2px 2px var(--shadow-color);
 		span {
 			color: var(--text-color);
+		}
+		svg {
+			margin: 10px;
+			opacity: 0.5;
 		}
 	}
 
