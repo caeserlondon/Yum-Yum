@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Sidebar from './Sidebar'
 
 import { faHome, faList, faCog } from '@fortawesome/free-solid-svg-icons'
+import { GiForkKnifeSpoon } from 'react-icons/gi'
 
 export default function Navbar() {
 	const [showSidebar, setShowSidebar] = useState(false)
@@ -35,6 +36,9 @@ export default function Navbar() {
 		<>
 			<div className='navbar container'>
 				<Link to='/' className='logo'>
+					<div>
+						<GiForkKnifeSpoon />
+					</div>
 					Y<span>u</span>m <span> </span>Y<span>u</span>m
 				</Link>
 				<div className='nav-links'>
