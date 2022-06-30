@@ -2,20 +2,20 @@ import { NavLink } from 'react-router-dom'
 import {
 	GiNoodles,
 	GiChopsticks,
-	GiArabicDoor,
 	GiFrance,
 	GiItalia,
 	GiIndianPalace,
-	GiAfrica,
-	GiOlive,
+	GiSpain,
 	GiEuropeanFlag,
+	GiUsaFlag,
+	GiSouthAmerica,
 } from 'react-icons/gi'
 
 const cuisineList = [
 	{
-		name: 'Middle East',
-		link: '/cuisine/Middle-Eastern',
-		icon: <GiArabicDoor />,
+		name: 'Southern',
+		link: '/cuisine/Southern',
+		icon: <GiSouthAmerica />,
 	},
 	{
 		name: 'French',
@@ -33,10 +33,16 @@ const cuisineList = [
 		icon: <GiItalia />,
 	},
 	{
-		name: 'African',
-		link: '/cuisine/African',
-		icon: <GiAfrica />,
+		name: 'American',
+		link: '/cuisine/American',
+		icon: <GiUsaFlag />,
 	},
+	{
+		name: 'Spanish',
+		link: '/cuisine/Spanish',
+		icon: <GiSpain />,
+	},
+
 	{
 		name: 'Thai',
 		link: '/cuisine/Thai',
@@ -47,11 +53,7 @@ const cuisineList = [
 		link: '/cuisine/European',
 		icon: <GiEuropeanFlag />,
 	},
-	{
-		name: 'Mediterranean',
-		link: '/cuisine/Mediterranean',
-		icon: <GiOlive />,
-	},
+
 	{
 		name: 'Chinese',
 		link: '/cuisine/Chinese',
