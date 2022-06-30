@@ -1,0 +1,71 @@
+.cuisines-list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	// margin: 1rem 1rem;
+	margin-top: 1rem;
+}
+
+.cuisine-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	margin-right: 2rem;
+	text-decoration: none;
+	text-transform: capitalize;
+	background: linear-gradient(
+		35deg,
+		var(--primary-color),
+		var(--background-color)
+	);
+	opacity: 0;
+	animation: getAnimationDuration(0.9s) slideInRight forwards;
+	transition: 0.5s;
+	transform: translateX(100%);
+	width: 5.8rem;
+	height: 5.8rem;
+	cursor: pointer;
+	box-shadow: 2px 4px 3px 0px rgba(0, 0, 0, 0.4);
+
+	h4 {
+		color: white;
+		font-size: 0.8rem;
+	}
+	svg {
+		color: white;
+		font-size: 1.5rem;
+		margin-bottom: 0.3rem;
+	}
+	&.active {
+		background: linear-gradient(
+			to bottom,
+			var(--primary-color),
+			var(--text-color)
+		);
+
+		svg {
+			color: white;
+		}
+		h4 {
+			color: white;
+		}
+	}
+	&:hover {
+		box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+
+		background: linear-gradient(
+			215deg,
+			var(--primary-color),
+			var(--background-color)
+		);
+	}
+	.cuisine-item-link {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
