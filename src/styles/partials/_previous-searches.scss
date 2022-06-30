@@ -15,6 +15,7 @@
 			border-radius: 30px;
 			box-shadow: 3px 3px 5px var(--shadow-color);
 			transform: translateX(100%);
+			transition: 1s;
 			opacity: 0;
 			animation: getAnimationDuration(0.5s) slideInRight forwards;
 		}
@@ -24,19 +25,25 @@
 		// background-color: green;
 		// justify-content: flex-end;
 		// margin-left: auto;
-		margin: 20px auto;
 		// display: flex;
-		display: inline-block;
+		// background-color: aqua;
+		margin: 40px auto;
+		display: block;
 		align-items: center;
-		height: 35px;
+		height: 45px;
+		box-shadow: var(--shadow-dark);
 		.btn {
-			height: 45px;
-			margin: 0;
+			// height: 45px;
+			// width: 45px;
+			// margin: 0;
+			opacity: 0.7;
+			padding-top: 16px;
 			border-radius: 0 10px 10px 0;
 		}
 
 		input {
-			min-width: 650px;
+			min-width: 730px;
+
 			height: 45px;
 			display: inline-block;
 			padding: 0 0.5em;
