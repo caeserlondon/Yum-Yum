@@ -1,6 +1,10 @@
 # Yum Yum
 
-### a Food recipies website build with React using API from https://spoonacular.com/
+### A Food recipies website build with:
+
+#### React V 18.1.0, and React Router Dom: V 6.3.0
+
+### using API from https://spoonacular.com/
 
 ## Available Scripts
 
