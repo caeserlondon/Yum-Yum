@@ -2,22 +2,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import Cuisines from './Cuisines'
 
-// const searches = [
-// 	'pizza',
-// 	'ramen',
-// 	'cookies',
-// 	'Taco',
-// 	'biriyani',
-// 	'salad',
-// 	'Burger',
-// 	'steak',
-// 	'pudding',
-// 	'soup',
-// 	'sushi',
-// 	'barbecue',
-// 	'pasta',
-// ]
-
 export default function PreviousSearches() {
 	return (
 		<>
