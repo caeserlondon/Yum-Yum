@@ -7,11 +7,7 @@ export default function RecipeCard({ recipe }) {
 			<CustomImage imgSrc={recipe.image} pt='65%' />
 			<div className='recipe-card-info'>
 				<p className='recipe-title'>{recipe.title}</p>
-				<div className='recipe-desc'>
-					{/* {recipe.dishTypes.map((type) => {
-						return <p key={type}>{type}</p>
-					})} */}
-				</div>
+				<div className='recipe-desc'></div>
 				<div>
 					<Link className='view-btn' to={'/recipe/' + recipe.id}>
 						VIEW RECIPE
