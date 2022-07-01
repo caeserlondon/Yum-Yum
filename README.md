@@ -6,6 +6,8 @@
 
 ### using API from https://spoonacular.com/
 
+---
+
 ## Available Scripts
 
 In the project directory, you can run:
