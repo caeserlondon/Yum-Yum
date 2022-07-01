@@ -58,7 +58,7 @@ const Random = () => {
 						return (
 							<SplideSlide key={recipe.id}>
 								<div className='card'>
-									<Link to={'/recipe/' + recipe.id}>
+									<Link to={'/searchedRecipe/' + recipe.id}>
 										<p>{recipe.title}</p>
 										<img src={recipe.image} alt={recipe.title} />
 									</Link>
