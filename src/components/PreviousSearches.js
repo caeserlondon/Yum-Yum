@@ -7,6 +7,17 @@ export default function PreviousSearches() {
 		<>
 			<Cuisines />
 			<div className='previous-searches section'>
+				{/* <div className='previous-searches-container'>
+				{searches.map((search, index) => (
+					<div
+					className='search-item'
+					key={index}
+					style={{ animationDelay: index * 0.15 + 's' }}
+					>
+					{search}
+					</div>
+					))}
+				</div> */}
 				<div className='search-box'>
 					<input type='text' placeholder='Search' />
 					<button className='btn'>
