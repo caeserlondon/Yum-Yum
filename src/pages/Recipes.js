@@ -1,4 +1,4 @@
-import PreviousSearches from '../components/PreviousSearches'
+import Search from '../components/Search'
 import RecipeCard from '../components/RecipeCard'
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -41,7 +41,7 @@ export default function Recipes() {
 
 	return (
 		<div>
-			<PreviousSearches />
+			<Search />
 			<div className='recipes-container'>
 				{recipes.map((recipe, index) => (
 					<RecipeCard key={index} recipe={recipe} />
