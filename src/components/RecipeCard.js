@@ -9,7 +9,7 @@ export default function RecipeCard({ recipe }) {
 				<p className='recipe-title'>{recipe.title}</p>
 				<div className='recipe-desc'></div>
 				<div>
-					<Link className='view-btn' to={'/recipe/' + recipe.id}>
+					<Link className='view-btn' to={'/searchedRecipe/' + recipe.id}>
 						VIEW RECIPE
 					</Link>
 				</div>
