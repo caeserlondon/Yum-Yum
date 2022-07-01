@@ -65,11 +65,7 @@ const Cuisines = () => {
 	return (
 		<div className='cuisines-list'>
 			{cuisineList.map((cuisineItem, index) => (
-				<div
-					// className='cuisine-item'
-					key={index}
-					style={{ animationDelay: index * 0.25 + 's' }}
-				>
+				<div key={index} style={{ animationDelay: index * 0.25 + 's' }}>
 					<NavLink to={cuisineItem.link} className='cuisine-item'>
 						{cuisineItem.icon}
 						<h4>{cuisineItem.name}</h4>
