@@ -1,6 +1,6 @@
 import { Link, useParams, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import PreviousSearches from '../components/PreviousSearches'
+import Search from '../components/Search'
 import CustomImage from '../components/CustomImage'
 
 function Cuisine() {
@@ -32,7 +32,7 @@ function Cuisine() {
 
 	return (
 		<>
-			<PreviousSearches />
+			<Search />
 			<div className='recipes-container'>
 				{cuisine.map((recipe) => {
 					return (
