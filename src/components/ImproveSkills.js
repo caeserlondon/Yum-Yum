@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import CustomImage from './CustomImage'
 
 export default function ImproveSkills() {
@@ -36,9 +37,9 @@ export default function ImproveSkills() {
 					</p>
 				))}
 				<div className='link-button'>
-					<a href='/recipes' className='btn'>
+					<Link to='/recipes' className='btn'>
 						Let's Cook
-					</a>
+					</Link>
 				</div>
 			</div>
 		</div>
