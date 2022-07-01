@@ -32,7 +32,6 @@ function Cuisine() {
 
 	return (
 		<>
-			{/* <Cuisines /> */}
 			<PreviousSearches />
 			<div className='recipes-container'>
 				{cuisine.map((recipe) => {
