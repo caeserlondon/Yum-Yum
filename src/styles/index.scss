@@ -3,6 +3,7 @@
 	--background-light: rgb(237, 217, 217);
 	--shadow-color: rgba(0, 0, 0, 0.2);
 	--shadow-dark: rgba(0, 0, 0, 0.5);
+	--button-dark: rgba(0, 0, 0, 0.7);
 
 	--box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
 
@@ -76,13 +77,13 @@ img {
 
 	background-image: linear-gradient(
 		to left,
-		var(--text-light) 0%,
+		var(--button-dark) 0%,
 		var(--primary-color) 51%,
-		var(--text-light) 100%
+		var(--button-dark) 100%
 	);
 	background-size: 200% auto;
 	transition: 0.5s;
-
+	text-align: center;
 	color: white;
 	padding: 0.75em 2em;
 	text-transform: uppercase;
@@ -160,19 +161,28 @@ img {
 	.container {
 		padding-inline: 18vw;
 	}
-	.previous-searches {
-		.search-box {
-			input {
-				min-width: 630px;
-				// background-color: aqua;
-			}
-		}
-	}
+	// .previous-searches {
+	// 	.search-box {
+	// 		input {
+	// 			min-width: 630px;
+	// 			// background-color: aqua;
+	// 		}
+	// 	}
+	// }
 }
-@media screen and (max-width: 1024px) {
-	.container {
-		padding-inline: 12vw;
-	}
+
+// @media only screen and (max-width: 1120px) and (min-width: 1020px) {
+// 	.previous-searches {
+// 		.search-box {
+// 			input {
+// 				min-width: 530px;
+// 				// background-color: red;
+// 			}
+// 		}
+// 	}
+// }
+
+@media only screen and (max-width: 1030px) and (min-width: 769px) {
 	.previous-searches {
 		.search-box {
 			input {
@@ -181,6 +191,20 @@ img {
 			}
 		}
 	}
+}
+
+@media screen and (max-width: 1024px) {
+	.container {
+		padding-inline: 12vw;
+	}
+	// .previous-searches {
+	// 	.search-box {
+	// 		input {
+	// 			min-width: 530px;
+	// 			// background-color: red;
+	// 		}
+	// 	}
+	// }
 	.details-container {
 		flex-wrap: wrap;
 	}
@@ -188,6 +212,7 @@ img {
 
 @media screen and (max-width: 768px) {
 	.navbar {
+		padding-top: 20px;
 		.nav-links {
 			display: none;
 		}
@@ -240,7 +265,6 @@ img {
 			}
 			.btn {
 				padding: 15px;
-				// background-color: purple;
 			}
 		}
 	}
@@ -249,8 +273,8 @@ img {
 @media screen and (max-width: 480px) {
 	.container {
 		// padding-inline: 1vw;
-		// padding: 20px;
-		padding: auto;
+		padding: 20px;
+		// padding: auto;
 	}
 
 	.cuisines-list {
@@ -269,7 +293,6 @@ img {
 			}
 			.btn {
 				padding: 15px;
-				// background-color: purple;
 			}
 		}
 	}
@@ -298,7 +321,6 @@ img {
 			}
 			.btn {
 				padding: 15px;
-				// background-color: purple;
 			}
 		}
 	}
