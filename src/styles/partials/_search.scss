@@ -1,12 +1,10 @@
 .previous-searches {
 	display: block;
-	h2 {
-		color: var(--text-color);
-		margin-bottom: 0.5em;
-	}
-	.previous-searches-container {
+
+	.previous-searches {
 		.search-item {
-			background-color: var(--primary-color);
+			// background-color: var(--primary-color);
+			background-color: orange;
 			display: inline-block;
 			padding: 0.5em 1em;
 			margin: 0 1em 1em 0;
@@ -28,7 +26,7 @@
 		// display: flex;
 		// background-color: aqua;
 		margin: 40px auto;
-		display: block;
+		display: inline-block;
 		align-items: center;
 		height: 45px;
 		box-shadow: var(--shadow-dark);
@@ -43,7 +41,6 @@
 
 		input {
 			min-width: 730px;
-
 			height: 45px;
 			display: inline-block;
 			padding: 0 0.5em;
@@ -57,4 +54,10 @@
 			}
 		}
 	}
+}
+.search-error {
+	color: var(--primary-color);
+	font-family: 'Water Brush', cursive;
+	font-size: 4rem;
+	margin: 5rem;
 }
