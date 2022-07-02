@@ -15,7 +15,7 @@ export default function Recipes() {
 
 	const getRecipes = async () => {
 		const check = localStorage.getItem('random')
-		console.log(recipes)
+		// console.log(recipes)
 
 		if (check) {
 			setRecipes(JSON.parse(check))
