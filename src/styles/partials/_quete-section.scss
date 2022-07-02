@@ -12,7 +12,13 @@
 	}
 	.quote-auther {
 		text-align: right;
-		margin-top: 1em;
+		margin: 1em;
 		color: var(--text-light);
 	}
+}
+.joke-text {
+	font-size: 1.2em;
+	line-height: 1.2;
+	color: var(--text-color);
+	margin-top: 2rem;
 }
