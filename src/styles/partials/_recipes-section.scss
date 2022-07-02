@@ -33,9 +33,9 @@
 		font-size: 1em;
 		background-image: linear-gradient(
 			to left,
-			var(--text-light) 0%,
+			var(--button-dark) 0%,
 			var(--primary-color) 51%,
-			var(--text-light) 100%
+			var(--button-dark) 100%
 		);
 		background-size: 200% auto;
 		transition: 0.5s;
@@ -44,7 +44,7 @@
 		border-radius: 15px;
 		padding: 5px 15px;
 		background-color: var(--primary-color);
-		opacity: 0.7;
+		// opacity: 0.7;
 		text-align: center;
 		box-shadow: var(--box-shadow);
 		display: block;
