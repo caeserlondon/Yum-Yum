@@ -3,8 +3,6 @@
 
 	.previous-searches {
 		.search-item {
-			// background-color: var(--primary-color);
-			background-color: orange;
 			display: inline-block;
 			padding: 0.5em 1em;
 			margin: 0 1em 1em 0;
@@ -23,10 +21,10 @@
 		// background-color: green;
 		// justify-content: flex-end;
 		// margin-left: auto;
-		// display: flex;
+		display: flex;
 		// background-color: aqua;
 		margin: 40px auto;
-		display: inline-block;
+		// display: inline-block;
 		align-items: center;
 		height: 45px;
 		box-shadow: var(--shadow-dark);
