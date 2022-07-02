@@ -20,11 +20,28 @@ export default function QuoteSection() {
 			const ress = await data.json()
 
 			setJoke(ress.text)
-			console.log(ress.text)
+			// console.log(ress.text)
 		}
 	}
 
 	return (
+		// <>
+		// 	<div className='section quote'>
+		// 		<p className='quote-text'>
+		// 			<FontAwesomeIcon icon={faQuoteLeft} />
+		// 			Cooking is like painting or writing a song. Just as there are only so
+		// 			many notes or colors, there are only so many flavors - it's how you
+		// 			combine them that sets you apart.
+		// 		</p>
+		// 		<p className='quote-auther'>- Wolfgang Puck</p>
+		// 	</div>
+		// 	<div className='link-button' onClick={() => fetchJoke()}>
+		// 		<div className='btn'>
+		// 			Tell Me A Random Food Joke // Caution: may contain adult humor!
+		// 		</div>
+		// 	</div>
+		// 	<p className='joke-text'>{joke}</p>
+		// </>
 		<>
 			<div className='section quote'>
 				<p className='quote-text'>
@@ -41,6 +58,11 @@ export default function QuoteSection() {
 				</div>
 			</div>
 			<p className='joke-text'>{joke}</p>
+			{joke.length > 0 && (
+				<div className='link-button' onClick={() => setJoke('')}>
+					<div className='btn'>Clear the Joke</div>
+				</div>
+			)}
 		</>
 	)
 }
