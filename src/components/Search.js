@@ -25,6 +25,8 @@ export default function PreviousSearches() {
 						placeholder='Search'
 						onChange={(e) => setInput(e.target.value)}
 						value={input}
+						minLength={1}
+						required
 					/>
 					<button className='btn'>
 						<FontAwesomeIcon icon={faSearch} />
