@@ -208,6 +208,11 @@ img {
 	.details-container {
 		flex-wrap: wrap;
 	}
+
+	.search-error {
+		font-size: 3rem;
+		margin: 3rem;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -267,6 +272,10 @@ img {
 				padding: 15px;
 			}
 		}
+	}
+	.search-error {
+		font-size: 2rem;
+		margin: 2rem;
 	}
 }
 
