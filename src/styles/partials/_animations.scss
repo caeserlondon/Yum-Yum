@@ -28,3 +28,13 @@
 		opacity: 1;
 	}
 }
+
+@keyframes ghost {
+	from {
+		transform: translatey(0.15em) scaley(0.95);
+	}
+
+	to {
+		transform: translatey(-0.15em);
+	}
+}
