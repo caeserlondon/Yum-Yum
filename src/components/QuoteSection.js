@@ -53,8 +53,9 @@ export default function QuoteSection() {
 				<p className='quote-auther'>- Wolfgang Puck</p>
 			</div>
 			<div className='link-button' onClick={() => fetchJoke()}>
-				<div className='btn'>
-					Tell Me A Random Food Joke // Caution: may contain adult humor!
+				<div className='btn joke'>
+					Random Food Joke from spoonacular.com/ ..Caution: may contain adult
+					humor!!!
 				</div>
 			</div>
 			<p className='joke-text'>{joke}</p>
