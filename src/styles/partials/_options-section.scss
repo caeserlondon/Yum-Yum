@@ -1,7 +1,7 @@
 .options-container {
 	box-shadow: 5px 5px 10px var(--shadow-color);
 	border-radius: 10px;
-	padding: 1em;
+	padding: 2.2em;
 	border-left: 0.5em solid var(--primary-color);
 	background-color: var(--background-light);
 	margin-top: 1em;
@@ -15,6 +15,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		cursor: pointer;
 		&.light {
 			background-color: #eddada;
 		}
