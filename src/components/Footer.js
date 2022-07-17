@@ -5,10 +5,12 @@ export default function Footer() {
 			<div className='footer-section'>
 				<p className='title'>YUM YUM</p>
 				<p>
-					YUM YUM is a place where you can please your soul and tummy with
-					delicious food recepies of all cuisine.
+					YUM YUM is a recipe search website with delicious food recepies of all
+					cuisines. using the API from https://spoonacular.com
 				</p>
-				<p>Copyrights &copy; {footerYear} Yum-Yum | All Rights Reserved</p>
+				<p className='copyright'>
+					Copyrights &copy; {footerYear} Yum-Yum | All Rights Reserved
+				</p>
 			</div>
 
 			<div className='footer-section'>
