@@ -10,20 +10,20 @@
 
 #### Using API from https://spoonacular.com
 
-![screenshot 1](./public/img/screenShots/Screenshot1.png)
+![screenshot 1](./public/img/screenShots/Screenshot1.jpg)
 
 #### Using animation and sliders.
 
-![screenshot 2](./public/img/screenShots/Screenshot2.png)
+![screenshot 2](./public/img/screenShots/Screenshot2.jpg)
 
 #### Search any recipe, ingredient or cusine!
 
-![screenshot 3](./public/img/screenShots/Screenshot3.png)
+![screenshot 3](./public/img/screenShots/Screenshot3.jpg)
 
 #### Change the theme and change the colors, font size and animation speed!
 
-![screenshot 4](./public/img/screenShots/Screenshot4.png)
+![screenshot 4](./public/img/screenShots/Screenshot4.jpg)
 
 #### Custom 404 page and 402 pages
 
-![screenshot 5](./public/img/screenShots/Screenshot5.png)
+![screenshot 5](./public/img/screenShots/Screenshot5.jpg)
