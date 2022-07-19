@@ -27,3 +27,7 @@
 #### Custom 404 page and 402 pages
 
 ![screenshot 5](./public/img/screenShots/Screenshot5.jpg)
+
+#### Tested for preformance at GTmetrics.com
+
+![screenshot 5](./public/img/screenShots/Screenshot6.jpg)
