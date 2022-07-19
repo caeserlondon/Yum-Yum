@@ -2,7 +2,7 @@
 
 #### A food recipies website deployed on Vercel.com
 
-### https://yum-yum-caeser.vercel.app/
+### https://yum-yum-caeserlondon.vercel.app/
 
 #### build with:
 
